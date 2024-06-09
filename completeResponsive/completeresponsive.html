@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./completeresponsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <!-- Humberger -->
+       <div class="Humberger">
+        <i class="fa-solid fa-bars" data-visible="true"></i>
+        <!-- <i class="fa-solid fa-close" data-visible="false"></i> -->
+       
+
+       </div>
+
+       <nav class="container desktop-menu">
+        <!-- left menu -->
+        <ul class="menu-links" id="left-menu">
+            <li><a href="#">Our Philosove</a></li>
+            <li><a href="#">Houses</a</li>
+            <li><a href="#">Map</a></li>
+        </ul>
+
+        <!-- center logo -->
+        <h1>
+            RetrieveM5
+        </h1>
+
+        <!-- Right Menu -->
+        <ul class="menu-links" id="right-menu">
+            <li><a href="#">Leisure</a></li>
+            <li><a href="#">How to get There</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+
+       </nav>
+
+       <nav class="container mobilemenu" data-visible="false">
+        <div class="navigation">
+            <h1>RetrieveM5</h1>
+            <ul class="menu-links">
+             <li><a href="#">Our Philosove</a></li>
+            <li><a href="#">Houses</a</li>
+            <li><a href="#">Map</a></li>
+            <li><a href="#">Leisure</a></li>
+            <li><a href="#">How to get There</a></li>
+            <li><a href="#">Contacts</a></li>
+
+            </ul>
+            <div class="mobile-menu-actions">
+                <button class="btn-primary" type="submit">Book a Room</button>
+                <button class="btn-secondary" type="submit">Write To Us</button>
+            </div>
+        </div>
+
+       </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+<h1>            YOU CANNOT DO YOGA<br>
+    YOGA IS YOUR NATURAL STATE</h1>
+    <button class="btn">Learn More</button>
+        </div>
+    </section>
+
+    <div class="container yoga">
+
+        <div class="content">
+            <h1>You Can ALways Control What Does On Inside</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nostrum ullam officia magnam blanditiis nemo consequuntur optio ad consectetur veniam.
+
+            </p>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="info-boxes">
+            <div class="box">
+                <img src="./premium_photo-1690535409614-ca5f48f9c9d7.avif" alt="">
+                <h1>Why Should go To Yoga</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ipsa modi facilis accusamus et numquam!</p>
+                <div>
+                    <button class="btn">Viw More</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./premium_photo-1690535409614-ca5f48f9c9d7.avif" alt="">
+                <h1>Why Should go To Yoga</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ipsa modi facilis accusamus et numquam!</p>
+                <div>
+                    <button class="btn">Viw More</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./premium_photo-1690535409614-ca5f48f9c9d7.avif" alt="">
+                <h1>Why Should go To Yoga</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ipsa modi facilis accusamus et numquam!</p>
+                <div>
+                    <button class="btn">Viw More</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./premium_photo-1690535409614-ca5f48f9c9d7.avif" alt="">
+                <h1>Why Should go To Yoga</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ipsa modi facilis accusamus et numquam!</p>
+                <div>
+                    <button class="btn">Viw More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- perfect section -->
+    <section class="perfect-condition">
+        <div class="container">
+            <h2>KEEP YOUR BODY IN PERFECT CONDITION</h2>
+            <p>Lorem ip  enim quas fugit! Fuga iste modi tempore excepturi dignissimos doloribus optio, nihil voluptatibus, eos consectetur, alias nesciunt velit laudantium quasi? Harum neque amet sit voluptate rem consectetur, iste dolorum sunt, accusamus veritatis, inventore exercitationem assumenda. Est sint quisquam reiciendis repellat rem tempore, voluptas exercitationem, atque, odio nesciunt ratione quidem numquam deserunt eveniet tenetur accusamus in voluptate. Delectus.</p>
+           </div>
+
+       
+    </section>
+
+
+    <section class="yoga-classes">
+        <div class="container">
+            <h2>Choose Your Classes And Start Your<br> Training</h2>
+            <button class="btn">Write To us</button>
+          
+      </div>
+
+       
+    </section>
+
+
+    <footer>
+       <div class="container">
+        <p>&copy; CopyRight  2022 mobirize- All Rights Reserved</p>
+       </div>
+    </footer>
+    
+
+
+    <script>
+       
+        let mobileMenu=document.querySelector(".mobilemenu");
+        let humberger =document.querySelector(".Humberger");
+
+        let icons=document.querySelectorAll("i");
+        console.log(icons)
+
+        humberger.addEventListener("click",(event)=>{
+            const isVisible=mobileMenu.getAttribute("data-visible");
+
+            if (isVisible == "true") {
+                // qari hiding
+                mobileMenu.setAttribute('data-visible', "false");
+                icons[0].setAttribute('data-visible', "false");
+                icons[1].setAttribute('data-visible', "true");
+            } else if (isVisible == "false") {
+                // soo bandhig showing
+                mobileMenu.setAttribute('data-visible', "true");
+                icons[0].setAttribute('data-visible', "true");
+                icons[1].setAttribute('data-visible', "false");
+            }
+
+            //mobileMenu.style="transform: translateX()%)"
+        })
+    </script>
+    
+</body>
+</html>
